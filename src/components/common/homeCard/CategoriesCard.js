@@ -3,9 +3,10 @@ import { View, Text ,TouchableOpacity} from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
-export default function CategoriesCard({ iconName, name }) {
+export default function CategoriesCard({ iconName, name,onpress }) {
     return (
         <TouchableOpacity
+        onPress={onpress}
             style={{
                 height: 130,
                 elevation: 2,

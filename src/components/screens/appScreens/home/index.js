@@ -59,9 +59,9 @@ const HomeScreen = ({ navigation }, props) => {
                     alignItems: 'center',
 
                 }}>
-                    <CategoriesCard name='Property for rent' iconName='hospital-o' />
-                    <CategoriesCard name='Property for Sale' iconName='building' />
-                    <CategoriesCard name='Rooms for rent' iconName='hotel' />
+                    <CategoriesCard name='Property for rent' iconName='hospital-o' onpress={()=>navigation.navigate('HomeCategories')} />
+                    <CategoriesCard name='Property for Sale' iconName='building' onpress={()=>navigation.navigate('HomeCategories')}/>
+                    <CategoriesCard name='Rooms for rent' iconName='hotel' onpress={()=>navigation.navigate('HomeCategories')}/>
                 </View>
                 <View style={{
                     flex: 1,
@@ -70,9 +70,9 @@ const HomeScreen = ({ navigation }, props) => {
                     alignItems: 'center',
 
                 }}>
-                    <CategoriesCard name='Motors' iconName='car' />
-                    <CategoriesCard name='Classifieds' iconName='shirtsinbulk' />
-                    <CategoriesCard name='Furniture & Garden' iconName='wheelchair' />
+                    <CategoriesCard name='Motors' iconName='car' onpress={()=>navigation.navigate('HomeCategories')}/>
+                    <CategoriesCard name='Classifieds' iconName='shirtsinbulk' onpress={()=>navigation.navigate('HomeCategories')}/>
+                    <CategoriesCard name='Furniture & Garden' iconName='wheelchair' onpress={()=>navigation.navigate('HomeCategories')}/>
                 </View>
                 <View style={{
                     flex: 1,
@@ -81,39 +81,39 @@ const HomeScreen = ({ navigation }, props) => {
                     alignItems: 'center',
 
                 }}>
-                    <CategoriesCard name='Mobile Phone & Tablets' iconName='hotel' />
-                    <CategoriesCard name='Community' iconName='hotel' />
-                    <CategoriesCard name='Jobs' iconName='black-tie' />
+                    <CategoriesCard name='Mobile Phone & Tablets' iconName='hotel' onpress={()=>navigation.navigate('HomeCategories')}/>
+                    <CategoriesCard name='Community' iconName='hotel' onpress={()=>navigation.navigate('HomeCategories')}/>
+                    <CategoriesCard name='Jobs' iconName='black-tie' onpress={()=>navigation.navigate('HomeCategories')}/>
                 </View>
-                <Title title='You recently looked at' />
+                <Title title='You recently looked at' onpress={()=>navigation.navigate('FullAboutProduct')}  />
                 <ScrollView
                     horizontal
                     showsHorizontalScrollIndicator={false}
                 // style={{ height: 400 }}
                 >
-                    <Card Photo={Photo} Price=' AED 2,045' ProductName='Maruti car' Area='Abu dhabi' />
-                    <Card Photo={Photo} Price='245' ProductName='Maruti car' Area='Abu dhabi' />
-                    <Card Photo={Photo} Price='245' ProductName='Maruti car' Area='Abu dhabi' />
+                    <Card Photo={Photo} Price=' AED 2,045' ProductName='Maruti car' Area='Abu dhabi' onpress={()=>navigation.navigate('OneAboutProduct')} />
+                    <Card Photo={Photo} Price='245' ProductName='Maruti car' Area='Abu dhabi' onpress={()=>navigation.navigate('OneAboutProduct')}/>
+                    <Card Photo={Photo} Price='245' ProductName='Maruti car' Area='Abu dhabi' onpress={()=>navigation.navigate('OneAboutProduct')}/>
                 </ScrollView>
-                <Title title='Popular in Residential for Rent' />
+                <Title title='Popular in Residential for Rent' onpress={()=>navigation.navigate('FullAboutProduct')} />
                 <ScrollView
                     horizontal
                     showsHorizontalScrollIndicator={false}
                 // style={{ height: 400 }}
                 >
-                    <Card Photo={Photo} Price=' AED 2,045' ProductName='Maruti car' Area='Abu dhabi' />
-                    <Card Photo={Photo} Price='245' ProductName='Maruti car' Area='Abu dhabi' />
-                    <Card Photo={Photo} Price='245' ProductName='Maruti car' Area='Abu dhabi' />
+                    <Card Photo={Photo} Price=' AED 2,045' ProductName='Maruti car' Area='Abu dhabi' onpress={()=>navigation.navigate('OneAboutProduct')} />
+                    <Card Photo={Photo} Price='245' ProductName='Maruti car' Area='Abu dhabi' onpress={()=>navigation.navigate('OneAboutProduct')} />
+                    <Card Photo={Photo} Price='245' ProductName='Maruti car' Area='Abu dhabi' onpress={()=>navigation.navigate('OneAboutProduct')}/>
                 </ScrollView>
-                <Title title='Popular in Residential for Rent' />
+                <Title title='Popular in Residential for Rent' onpress={()=>navigation.navigate('FullAboutProduct')} />
                 <ScrollView
                     horizontal
                     showsHorizontalScrollIndicator={false}
                 // style={{ height: 400 }}
                 >
-                    <Card Photo={Photo} Price=' AED 2,045' ProductName='Maruti car' Area='Abu dhabi' />
-                    <Card Photo={Photo} Price='245' ProductName='Maruti car' Area='Abu dhabi' />
-                    <Card Photo={Photo} Price='245' ProductName='Maruti car' Area='Abu dhabi' />
+                    <Card Photo={Photo} Price=' AED 2,045' ProductName='Maruti car' Area='Abu dhabi' onpress={()=>navigation.navigate('OneAboutProduct')} />
+                    <Card Photo={Photo} Price='245' ProductName='Maruti car' Area='Abu dhabi' onpress={()=>navigation.navigate('OneAboutProduct')}/>
+                    <Card Photo={Photo} Price='245' ProductName='Maruti car' Area='Abu dhabi' onpress={()=>navigation.navigate('OneAboutProduct')}/>
                 </ScrollView>
             </ScrollView>
         </View>

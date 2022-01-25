@@ -27,14 +27,14 @@ export default function ProfileScreen({ navigation }) {
       </View>
       </TouchableOpacity>
       <ScrollView>
-      <InformationList iconname='user' textname='My Ads' />
-      <InformationList iconname='user' textname='My Saved Searches' />
+      <InformationList iconname='user' textname='My Ads' onpress={()=>navigation.navigate('MyAdsScreen')}/>
+      <InformationList iconname='user' textname='My Saved Searches' onpress={()=>navigation.navigate('SavedSerchesScreen')} />
       <View style={{
         borderBottomWidth: 1,
         borderColor: '#000000',
       }} />
       <Text style={{ fontSize: 18, color: '#000000', paddingVertical: 40, marginLeft: 10 }}>Settings</Text>
-      <InformationList iconname='user' textname='My Profile' />
+      <InformationList iconname='user' textname='My Profile'  onpress={()=>navigation.navigate('MyProfileScreen')} />
       <InformationList iconname='user' textname='City' />
       <View style={styles.pickerView}>
       <Picker
@@ -67,12 +67,12 @@ export default function ProfileScreen({ navigation }) {
         </Picker>
       </View>
       <View style={{ padding:10}} />
-      <InformationList iconname='user' textname='Support' />
-      <InformationList iconname='user' textname='Report an issue' />
-      <InformationList iconname='user' textname='Terms and Conditions' />
-      <InformationList iconname='user' textname='Advertising' />
-      <InformationList iconname='user' textname='Logout' />
-      <InformationList iconname='user' textname='Delete Account' />
+      <InformationList iconname='user' textname='Support' onpress={()=>navigation.navigate('SupportScreen')}/>
+      <InformationList iconname='user' textname='Report an issue' onpress={()=>navigation.navigate('ReportAnIssueScreen')}/>
+      <InformationList iconname='user' textname='Terms & Conditions'onpress={()=>navigation.navigate('TermsConditionScreen')} />
+      <InformationList iconname='user' textname='Advertising' onpress={()=>navigation.navigate('AdvertisingScreen')}/>
+      <InformationList iconname='user' textname='Logout' onpress={()=>navigation.navigate('LogoutScreen')}/>
+      <InformationList iconname='user' textname='Delete Account' onpress={()=>navigation.navigate('DeleteAccountScreen')}/>
       </ScrollView>
     </View>
   );

@@ -1,9 +1,10 @@
 import React from 'react'
 import { Text, View, TouchableOpacity, Image } from 'react-native'
 
-   const Card = ({Photo,Price,ProductName,Area}) => {
+   const Card = ({Photo,Price,ProductName,Area,onpress}) => {
     return (
         <TouchableOpacity
+        onPress={onpress}
             style={{
                 height: 230,
                 elevation: 2,

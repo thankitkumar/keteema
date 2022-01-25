@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text,TouchableOpacity } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-export default function Title({title}) {
+export default function Title({title,onpress}) {
     return (
         <View style={{
             flexDirection: "row",
@@ -18,7 +18,9 @@ export default function Title({title}) {
                 }}>{title} </Text>
             </View>
             <View style={{ width: "40%", alignItems: "flex-end" }}>
-                <TouchableOpacity >
+                <TouchableOpacity 
+                onPress={onpress}
+                >
                         <Text style={{
                             fontWeight: "bold",
                             fontSize: 13,

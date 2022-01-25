@@ -3,10 +3,10 @@ import {
     View, Text, TouchableOpacity,
 } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome'
-export default function InformationList({ iconname, textname,btw }) {
+export default function InformationList({ iconname, textname,onpress }) {
     return (
         <View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={onpress}>
                 <View
                     style={{
                         fontSize: 16,
