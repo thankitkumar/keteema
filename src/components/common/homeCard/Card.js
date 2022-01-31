@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View, TouchableOpacity, Image } from 'react-native'
 
-   const Card = ({Photo,Price,ProductName,Area,onpress}) => {
+   const Card = ({Photo,Price,ProductName,Area,Currency,onpress}) => {
     return (
         <TouchableOpacity
         onPress={onpress}
@@ -29,7 +29,7 @@ import { Text, View, TouchableOpacity, Image } from 'react-native'
                     fontWeight: "bold",
                     fontSize:15,
                     color: "#FF0000",
-                }}>{Price}</Text>
+                }}>{Currency} {Price}</Text>
                 <Text style={{
                     fontWeight: "bold",
                     color: "#000000",

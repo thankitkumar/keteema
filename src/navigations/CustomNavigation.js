@@ -17,7 +17,6 @@ import ProfileScreen from '../components/screens/appScreens/Profile'
 import FullAboutProduct from '../components/screens/appScreens/HomeAbout/FullAbout';
 import OneAboutProduct from '../components/screens/appScreens/HomeAbout/OneProduct';
 import HomeCategories from '../components/screens/appScreens/HomeAbout/HomeCategories';
-import { TextInput } from 'react-native';
 const Stack = createStackNavigator();
 const screenOptionStyle = {
     headerShown: false
@@ -48,7 +47,7 @@ const HomeScreenNavigator = () => {
                 name="HomeCategories"
                 component={HomeCategories}
                 options={{ headerShown: true, }}
-            />
+            /> 
         </Stack.Navigator>
     )
 }
